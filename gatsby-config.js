@@ -7,7 +7,7 @@ module.exports = {
       company: 'Launch Academy',
       companyUrl: 'https://launchacademy.com'
     },
-    description: `A place to record the process of building.`,
+    description: `On the subjects of building developers, software, businesses, and teams.`,
     siteUrl: `https://danpickett.com`,
     social: {
       twitter: `dpickett`,
@@ -53,6 +53,12 @@ module.exports = {
           `gatsby-remark-smartypants`,
         ],
       },
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-W9FVBSW",
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
