@@ -1,14 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Dan Pickett`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Dan Pickett`,
+      title: 'Co-Founder',
+      company: 'Launch Academy',
+      companyUrl: 'https://launchacademy.com'
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A place to record the process of building.`,
+    siteUrl: `https://danpickett.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `dpickett`,
+      github: `dpickett`,
+      linkedIn: 'dpickett',
+      instagram: `dpickett`
     },
   },
   plugins: [

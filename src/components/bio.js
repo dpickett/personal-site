@@ -17,6 +17,8 @@ const Bio = () => {
           author {
             name
             summary
+            company
+            companyUrl
           }
           social {
             twitter
@@ -36,20 +38,31 @@ const Bio = () => {
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../images/profile-pic.png"
+        src="../images/dan-pickett.png"
         width={50}
         height={50}
         quality={95}
         alt="Profile picture"
       />
       {author?.name && (
+        <div>
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
+          Written by <strong>{author.name}</strong> {author?.title || null} of <a href={author?.companyUrl}>{author?.company}</a>
         </p>
+
+        <ul>
+            <li>
+              <a href={`https://twitter.com/${social?.twitter || ``}`}>
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a href={`https://github.com/${social?.github || ``}`}>
+                GitHub
+              </a>
+            </li>
+          </ul>
+          </div>
       )}
     </div>
   )
